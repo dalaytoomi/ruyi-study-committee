@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>宋如一 · 竞选学习委员</title>
+<meta name="description" content="宋如一竞选班级学习委员 —— 我办事，你放心">
+<script>document.documentElement.classList.add('rv');</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="world" aria-hidden="true">
+  <div class="landscape"></div>
+  <div class="sky-tint"></div>
+  <div class="sun-halo"></div>
+  <canvas id="atmosphere"></canvas>
+  <div class="pointer-light"></div>
+  <div class="world-shade"></div>
+</div>
+
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">如</span>
+      <div>如意的竞选手札<small>SONG RU YI · STUDY COMMITTEE</small></div>
+    </div>
+    <div class="scene-badge">
+      <span id="weather-icon">☀</span>
+      <div><b>像素田园</b><small>认真办事的一天</small></div>
+    </div>
+  </header>
+
+  <main class="journal" id="journal">
+    <div class="progress"><i id="progress"></i></div>
+
+    <div class="journal-top">
+      <span><i></i>学习委员竞选 · 第 <b id="top-idx">1</b> 页</span>
+      <span>JILIN UNIVERSITY · CS 2026</span>
+    </div>
+
+    <div class="pages" id="pages">
+
+      <!-- ① 封面 -->
+      <section class="slide cover" data-title="封面">
+        <div class="cover-copy">
+          <p class="eyebrow" data-rv>吉林大学 · 2026级 · 计算机科学与技术</p>
+          <h1 data-rv>宋如一</h1>
+          <div class="candidate" data-rv>
+            <span class="candidate-seal">如</span>
+            <div>
+              <span class="candidate-label">竞选职位</span>
+              <strong>班级学习委员</strong>
+            </div>
+          </div>
+          <p class="cover-slogan" data-rv>我办事<span class="title-dot">，</span>你放心</p>
+          <p class="class-name" data-rv>辽宁大连 · 谐音「如意」</p>
+        </div>
+        <div class="cover-view">
+          <span class="location-tag" data-rv>📍 辽宁 · 大连</span>
+          <img src="assets/avatar.png" alt="宋如一插画头像" class="cover-avatar" data-rv>
+          <div class="view-caption" data-rv>
+            <span class="pixel-spark">✦</span>
+            <p>经手的事，一定有着落<br><strong>件件有着落 · 事事有回音</strong></p>
+          </div>
+        </div>
+        <div class="cover-footer">
+          <span>我办事，你放心</span>
+          <span>点击右页 / 按 → 开始翻阅</span>
+        </div>
+      </section>
+
+      <!-- ② About Me -->
+      <section class="slide" data-title="关于我">
+        <div class="page-heading">
+          <p class="eyebrow" data-rv>ABOUT ME</p>
+          <h2 data-rv>关于我</h2>
+        </div>
+        <div class="card-list three">
+          <article class="paper-card" data-rv>
+            <span class="stamp-tile">名</span>
+            <h3>基本信息</h3>
+            <p>宋如一，谐音「如意」，<br>来自辽宁大连。</p>
+          </article>
+          <article class="paper-card" data-rv>
+            <span class="stamp-tile">趣</span>
+            <h3>我的爱好</h3>
+            <p>热爱生活，认真度日。喜欢徒步山野、看电影，也爱逛有烟火气和人文气息的地方。</p>
+          </article>
+          <article class="paper-card is-feature" data-rv>
+            <span class="stamp-tile">稳</span>
+            <h3>我所擅长的</h3>
+            <p>认真办事。<br><strong>经手的事，一定有着落。</strong></p>
+          </article>
+        </div>
+        <p class="page-note" data-rv><span>✦</span> 名字是「如一」，做事也始终如一。</p>
+      </section>
+
+      <!-- ③ 对学委的理解 -->
+      <section class="slide" data-title="我的理解">
+        <div class="page-heading">
+          <p class="eyebrow" data-rv>MY UNDERSTANDING</p>
+          <h2 data-rv>我对学委的理解</h2>
+        </div>
+        <div class="bridge" data-rv>
+          <article class="bridge-side">
+            <span class="role-label">老师</span>
+            <h3>要求 · 反馈</h3>
+          </article>
+          <span class="bridge-link">⇄</span>
+          <article class="bridge-center">
+            <span class="role-label">学习委员</span>
+            <h3>沟通的纽带</h3>
+            <span class="seal-label">核心在于服务班级学业</span>
+          </article>
+          <span class="bridge-link">⇄</span>
+          <article class="bridge-side">
+            <span class="role-label">同学</span>
+            <h3>诉求 · 意见</h3>
+          </article>
+        </div>
+        <blockquote data-rv>
+          学委是师生沟通的纽带，核心在于服务班级学业。<strong>及时传递通知，收集学习诉求，坚持务实为本</strong>，助力营造良好班风学风。
+        </blockquote>
+        <div class="chip-row" data-rv>
+          <span class="chip">传递通知</span>
+          <span class="chip">收集诉求</span>
+          <span class="chip">务实为本</span>
+          <span class="chip">班风学风</span>
+        </div>
+      </section>
+
+      <!-- ④ 我的优势 -->
+      <section class="slide" data-title="我的优势">
+        <div class="page-heading">
+          <p class="eyebrow" data-rv>WHY ME</p>
+          <h2 data-rv>我的优势</h2>
+        </div>
+        <div class="card-list three">
+          <article class="trait" data-rv>
+            <span class="trait-icon">真</span>
+            <span class="trait-en">SERIOUS</span>
+            <h3>认真</h3>
+            <p>不敷衍、不糊弄，<br>认真对待每一件小事。</p>
+            <span class="trait-footer">小事当大事做</span>
+          </article>
+          <article class="trait" data-rv>
+            <span class="trait-icon">责</span>
+            <span class="trait-en">RESPONSIBLE</span>
+            <h3>负责</h3>
+            <p>事情交到我手里，<br>就会跟到底，不甩锅、不烂尾。</p>
+            <span class="trait-footer">全程跟到底</span>
+          </article>
+          <article class="trait" data-rv>
+            <span class="trait-icon">行</span>
+            <span class="trait-en">EXECUTION</span>
+            <h3>执行力</h3>
+            <p>今天能做完的不拖到明天，<br>说过的承诺一定兑现。</p>
+            <span class="trait-footer">说到就做到</span>
+          </article>
+        </div>
+        <p class="page-note" data-rv><span>✦</span> 总结成一句话：<strong>我办事，你放心。</strong></p>
+      </section>
+
+      <!-- ⑤ 当选之后 -->
+      <section class="slide" data-title="当选之后">
+        <div class="page-heading">
+          <p class="eyebrow" data-rv>ACTION PLAN</p>
+          <h2 data-rv>当选之后，我会做这四件事</h2>
+        </div>
+        <div class="action-grid">
+          <article class="action-card" data-rv>
+            <span class="action-number">01</span>
+            <div>
+              <span class="tag">信息传递</span>
+              <h3>保障信息高效传递</h3>
+              <p>定期查阅 OA 通知，第一时间同步竞赛、等级考试、学术讲座等各类学业相关资讯，避免同学因信息差错失机会。</p>
+            </div>
+          </article>
+          <article class="action-card" data-rv>
+            <span class="action-number">02</span>
+            <div>
+              <span class="tag">任务提醒</span>
+              <h3>做好学业任务提醒</h3>
+              <p>在作业提交节点前进行提示，清晰告知截止时间与提交规范，协助同学们合理规划学习进度。</p>
+            </div>
+          </article>
+          <article class="action-card" data-rv>
+            <span class="action-number">03</span>
+            <div>
+              <span class="tag">双向沟通</span>
+              <h3>搭建师生沟通渠道</h3>
+              <p>收集同学们关于课程安排、课业任务、考试规划的意见并整理汇总，向任课教师反馈；同时准确传达教师的要求与反馈，做好双向沟通。</p>
+            </div>
+          </article>
+          <article class="action-card" data-rv>
+            <span class="action-number">04</span>
+            <div>
+              <span class="tag">务实服务</span>
+              <h3>坚持务实服务原则</h3>
+              <p>学习委员的核心职责是服务班级，杜绝形式化工作。尽量不占用同学们的休息时间，聚焦解决班级真实的学习需求。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ⑥ 结尾 -->
+      <section class="slide finale" data-title="尾声">
+        <div class="finale-copy">
+          <p class="finale-prelude" data-rv>件件有着落，事事有回音。</p>
+          <h2 data-rv>我是宋如一</h2>
+          <p class="finale-slogan" data-rv>我办事<span class="title-dot">，</span>你放心</p>
+          <p class="finale-signature" data-rv>宋如一 · 吉林大学 2026级计算机科学与技术</p>
+        </div>
+        <div class="finale-view">
+          <img src="assets/avatar.png" alt="宋如一插画头像" class="finale-avatar" data-rv>
+          <div class="thanks-seal" data-rv>
+            <span>谢 谢</span>
+            认真度日 · 始终如一
+            <small>SONG RU YI · 2026</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- 点击翻页热区 -->
+      <button class="flip-zone left" id="flip-prev" aria-label="上一页"></button>
+      <button class="flip-zone right" id="flip-next" aria-label="下一页"></button>
+    </div>
+
+    <div class="journal-bottom">
+      <span>← → 方向键翻页 · 空格下一页 · F 全屏</span>
+      <span id="counter">01 / 06</span>
+    </div>
+  </main>
+
+  <nav class="controls" aria-label="页面导航">
+    <button class="nav-button" id="btn-prev">‹ 上一页</button>
+    <div class="chapter-dock" id="dock"></div>
+    <button class="nav-button primary" id="btn-next">下一页 ›</button>
+  </nav>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
